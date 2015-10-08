@@ -1,0 +1,39 @@
+#Author: Jin He
+f = open("/Users/jinhe/Documents/workspace/P02/src/AlexanderGraham1.ged","r") #opens file with name of "test.txt"
+myList = []
+year=[]
+for line in f:
+     myList.append(line)
+    # print(myList)
+
+for index, i in enumerate(myList):    
+    save=i.split(" ")
+    #print(save)
+    #print (save[0])
+    #target= save[1]
+    #print (target)
+    if save[0] in ['1'] and save[1] in ['NAME']:
+        
+       # print 'This is the name : ' + j
+        StringName=i[6:]
+        #print 'This string is : ' + StringName
+        NewName=StringName.replace("/", " ")
+        print 'Name is : ' +NewName
+        
+    if save[1] in ['BIRT\r\n'] :
+        next=myList[index + 1]
+        #print'This is the birthday : ' + next
+        year=next[13:]
+    
+        #print'This is the birthday year: ' + year
+        #print 'THis is the year:' + next.split(" ")
+        convert= int( year)
+        Test= convert+1
+        Current=2015-convert
+        
+        print 'Age is :' 
+        print(Current)
+        print '  '
+        
+        
+        

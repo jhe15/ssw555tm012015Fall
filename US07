@@ -1,23 +1,42 @@
-#Author: Jin He
-f = open("/Users/jinhe/Documents/workspace/P02/src/AlexanderGraham1.ged","r") #opens file with name of "test.txt"
-myList = []
-
-for line in f:
-     myList.append(line)
-    # print(myList)
-
-for i in myList:    
-    save=i.split(" ")
-    #print(save)
-    #print (save[0])
-    #target= save[1]
-    #print (target)
-    if save[0] in ['2'] and save[1] in ['DATE']:
-        convert= int( save[4])
-        print(convert)
-        if convert > 1865:
-                    print ("This is valid age")
-        else:
-                    print ("This is invalid age")
-    
-         
+#Author Jin He
+def AgeLessThan150():
+    import datetime
+    today=datetime.datetime.now()
+    year=today.year
+    next3=[]
+    f = open("/Users/jinhe/Documents/workspace/P02/src/AlexanderGraham1.ged","r") 
+    myList = []
+    for line in f:
+        myList.append(line)
+     
+    for index, i in enumerate(myList):    
+        save=i.split(" ")
+        
+        if save[0] in ['1'] and save[1] in ['NAME']:
+            StringName=i[6:]
+            NewName=StringName.replace("/", " ")
+            print ' '
+            print 'Name is : ' +NewName
+        
+        if save[1] in ['BIRT\r\n'] :
+            next=myList[index + 1]
+            listyear=next[13:]
+            convert= int( listyear)
+            convertcurrentyear=int(year)
+            Result=convertcurrentyear-convert
+            next3=myList[index + 3]
+        
+            if  Result <150:
+                print 'Birth after 1865, age less than 150'
+        
+            elif Result >150 and next3.startswith('2 DATE'):
+                print'Birth before 1867'
+                listDeath=next3[13:]
+                Actualage=int(listDeath)-convert
+                print ' Actual age is: ' 
+                print (Actualage)
+           
+            else :
+                print'Information is not clear'
+            
+AgeLessThan150()   

@@ -1,39 +1,35 @@
 #Author: Jin He
-f = open("/Users/jinhe/Documents/workspace/P02/src/AlexanderGraham1.ged","r") #opens file with name of "test.txt"
-myList = []
-year=[]
-for line in f:
-     myList.append(line)
-    # print(myList)
+def CurrentAge():
+    import datetime
+    today=datetime.datetime.now()
+    year=today.year
 
-for index, i in enumerate(myList):    
-    save=i.split(" ")
-    #print(save)
-    #print (save[0])
-    #target= save[1]
-    #print (target)
-    if save[0] in ['1'] and save[1] in ['NAME']:
+    f = open("/Users/jinhe/Documents/workspace/P02/src/AlexanderGraham1.ged","r") 
+    myList = []
+    for line in f:
+        myList.append(line)
+     
+    for index, i in enumerate(myList):    
+        save=i.split(" ")
         
-       # print 'This is the name : ' + j
-        StringName=i[6:]
-        #print 'This string is : ' + StringName
-        NewName=StringName.replace("/", " ")
-        print 'Name is : ' +NewName
+        if save[0] in ['1'] and save[1] in ['NAME']:
+            StringName=i[6:]
+            NewName=StringName.replace("/", " ")
+            print 'Name is : ' +NewName
         
-    if save[1] in ['BIRT\r\n'] :
-        next=myList[index + 1]
-        #print'This is the birthday : ' + next
-        year=next[13:]
+        if save[1] in ['BIRT\r\n'] :
+            next=myList[index + 1]
+            listyear=next[13:]
+            convert= int( listyear)
+            convertcurrentyear=int(year)
+            Result=convertcurrentyear-convert
+        
+            print 'Age is :' 
+            print(Result)
+            print '  '
+        
+CurrentAge()        
+        
     
-        #print'This is the birthday year: ' + year
-        #print 'THis is the year:' + next.split(" ")
-        convert= int( year)
-        Test= convert+1
-        Current=2015-convert
-        
-        print 'Age is :' 
-        print(Current)
-        print '  '
-        
         
         

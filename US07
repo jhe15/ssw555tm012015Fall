@@ -35,8 +35,13 @@ def AgeLessThan150():
                 Actualage=int(listDeath)-convert
                 print ' Actual age is: ' 
                 print (Actualage)
+                if Actualage< 150:
+                    print 'age is less than 150'
+                else:
+                    print'age is more than 150, it is invalid'
+                
            
             else :
                 print'Information is not clear'
             
-AgeLessThan150()   
+AgeLessThan150()             

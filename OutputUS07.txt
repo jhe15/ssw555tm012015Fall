@@ -1,0 +1,23 @@
+ 
+Name is :  Alexander  Bell 
+
+Birth before 1867
+ Actual age is: 
+75
+age is less than 150
+ 
+Name is :  Mabel  Hubbard 
+
+Information is not clear
+ 
+Name is :  Elsie May  Hubbard 
+
+Birth after 1865, age less than 150
+ 
+Name is :  Edward  Bell 
+
+Birth after 1865, age less than 150
+ 
+Name is :  Mary  Bell 
+
+Birth after 1865, age less than 150

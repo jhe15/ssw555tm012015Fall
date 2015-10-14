@@ -4,7 +4,7 @@ def AgeLessThan150():
     today=datetime.datetime.now()
     year=today.year
     next3=[]
-    f = open("/Users/jinhe/Documents/workspace/P02/src/AlexanderGraham1.ged","r") 
+    f = open("AlexanderGraham1.ged","r") 
     myList = []
     for line in f:
         myList.append(line)

@@ -1,0 +1,41 @@
+Name is :  Alexander  Bell 
+
+ The gender:M
+ This person is a male with the same last name with family.
+Name is :  Mabel  Hubbard 
+
+ The gender:F
+ This person is a female.
+Name is :  Elsie May  Hubbard 
+
+ The gender:F
+ This person is a female.
+Name is :  Edward  Bell 
+
+ The gender:M
+ This person is a male with the same last name with family.
+Name is :  Mary  Bell 
+
+ The gender:F
+ This person is a female.
+android-344861edcf43a996:Desktop jinhe$ python MLastName.py
+Name is :  Alexander  Bell 
+
+ The gender:M
+ This person is a male with the same last name with family.
+Name is :  Mabel  Hubbard 
+
+ The gender:F
+ This person is a female.
+Name is :  Elsie May  Hubbard 
+
+ The gender:F
+ This person is a female.
+Name is :  Edward  Bella 
+
+ The gender:M
+ This person is a male with the different last name with family.
+Name is :  Mary  Bell 
+
+ The gender:F
+ This person is a female.

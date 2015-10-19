@@ -8,13 +8,16 @@ age is less than 150
  
 Name is :  Mabel  Hubbard 
 
-Information is not clear
+Birth before 1867
+ Actual age is: 
+155
+age is more than 150, it is invalid
  
 Name is :  Elsie May  Hubbard 
 
 Birth after 1865, age less than 150
  
-Name is :  Edward  Bell 
+Name is :  Edward  Bella 
 
 Birth after 1865, age less than 150
  

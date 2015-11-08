@@ -1,5 +1,5 @@
 #Author Jin He
-def AgeLessThan150():
+def UpComingBD():
     import datetime
     
     today=datetime.datetime.now()
@@ -57,4 +57,4 @@ def AgeLessThan150():
                     print "birthday is " + thismonth + "/" +listday
                     print" birthdays will coming soon"    
                 
-AgeLessThan150()
+UpComingBD()

@@ -1,5 +1,5 @@
 #Author Jin He
-def AgeLessThan150():
+def ListRecentBirth():
     import datetime
     
     today=datetime.datetime.now()
@@ -60,4 +60,4 @@ def AgeLessThan150():
                 if  int(listyear)== int(todayyear) and elements == thismonth and int(todayday)>=int(listday) :
                     print "birthday is " + elements + "/" +listday
                     print" birthdays were born in the last 30 days" 
-AgeLessThan150()
+ListRecentBirth()

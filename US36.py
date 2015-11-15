@@ -56,9 +56,9 @@ def ListRecentDeath():
                 
                 
                 if  int(listyear)== int(todayyear) and  elements == lastmonth and int(todayday)<=int(listday) :
-                    print "Death is " +elements + "/" +listday + "/" +listyear 
+                    print "Death is " +elements + "/" +listday + "/" +str(todayyear)
                     print" Death  in the last 30 days"   
                 if  int(listyear)== int(todayyear) and elements == thismonth and int(todayday)>=int(listday) :
-                    print "Death is " + elements + "/" +listday
+                    print "Death is " + elements + "/" +str(todayyear)
                     print" Death  in the last 30 days" 
 ListRecentDeath()
